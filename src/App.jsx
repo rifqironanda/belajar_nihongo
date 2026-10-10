@@ -24,7 +24,7 @@ function App(){
   return <div className="app-shell">
     <aside className={open?'sidebar open':'sidebar'}>
       <button className="close-mobile" onClick={()=>setOpen(false)} aria-label="Tutup menu"><X/></button>
-      <div className="brand"><span>学</span><div><b>MANABI</b><small>日本語 • NIHONGO</small></div></div>
+      <div className="brand"><span>学</span><div><b>Belajar Bahasa Jepang</b><small>Berbasis Irodori</small></div></div>
       <nav>{nav.map(({id,label,icon:Icon})=><button key={id} className={page===id?'active':''} onClick={()=>go(id)}><Icon size={19}/>{label}</button>)}</nav>
       <div className="sidebar-goal"><Target size={22}/><b>Target hari ini</b><span>{done.length}/18 pelajaran selesai</span><div><i style={{width:`${done.length/18*100}%`}}/></div></div>
       <p className="sidebar-note">毎日少しずつ<br/><span>Sedikit demi sedikit, setiap hari.</span></p>
@@ -97,3 +97,4 @@ function Exam(){
 function Result({score,total,reset,label}){const pct=Math.round(score/total*100);return <section className="page result"><div className="result-ring" style={{'--pct':`${pct*3.6}deg`}}><div><b>{pct}</b><span>/100</span></div></div><span className="eyebrow">{label.toUpperCase()}</span><h1>{pct>=80?'すばらしい！ Luar biasa.':pct>=60?'いいですね！ Teruskan.':'もう一度！ Coba lagi.'}</h1><p>Kamu menjawab <b>{score}</b> dari <b>{total}</b> soal dengan benar.</p><div className="result-note">{pct>=70?'Fondasi cukup baik. Lanjutkan materi yang belum selesai dan pertahankan latihan rutin.':'Tinjau kembali pola kalimat dan kosakata Irodori, lalu coba simulasi sekali lagi.'}</div><button className="primary" onClick={reset}><RotateCcw/> Ulangi latihan</button></section>}
 
 export default App
+

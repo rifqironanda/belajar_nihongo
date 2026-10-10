@@ -52,13 +52,16 @@ button {
 }
 .brand b {
   display: block;
-  letter-spacing: 0.16em;
+  letter-spacing: 0;
   font-size: 14px;
+  line-height: 1.4;
 }
 .brand small {
-  font-size: 9px;
-  opacity: 0.58;
-  letter-spacing: 0.13em;
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  opacity: 0.72;
+  letter-spacing: 0.02em;
 }
 .sidebar nav {
   display: grid;
@@ -1107,3 +1110,4 @@ footer small {
     padding: 25px 18px;
   }
 }
+

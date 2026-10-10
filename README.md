@@ -1,4 +1,4 @@
-# Manabi — Belajar Nihongo
+# Belajar Bahasa Jepang Berbasis Irodori
 
 Dashboard React responsif untuk belajar bahasa Jepang dasar melalui situasi sehari-hari.
 
@@ -35,3 +35,4 @@ npm run preview
 - Karakter latihan pilihan ganda juga mempertimbangkan [JLPT Official Sample Questions](https://www.jlpt.jp/e/samples/forlearners.html).
 
 Seluruh soal di aplikasi ditulis secara orisinal untuk latihan. Aplikasi ini tidak berafiliasi dengan Japan Foundation dan bukan simulasi resmi JFT-Basic atau JLPT.
+
